@@ -1,0 +1,25 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red191\green100\blue38;\red32\green32\blue32;\red254\green187\blue91;
+\red153\green168\blue186;\red88\green118\blue71;\red86\green132\blue173;\red152\green54\blue29;}
+{\*\expandedcolortbl;;\csgenericrgb\c74902\c39216\c14902;\csgenericrgb\c12549\c12549\c12549;\csgenericrgb\c99608\c73333\c35686;
+\csgenericrgb\c60000\c65882\c72941;\csgenericrgb\c34510\c46275\c27843;\csgenericrgb\c33725\c51765\c67843;\csgenericrgb\c59608\c21176\c11373;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs34 \cf2 \cb3 def \cf4 display_time\cf5 ():\
+    current_time = tm.strftime (\cf6 '%H:%M:%S'\cf5 )\
+    clock_label[\cf6 'text'\cf5 ] = current_time\
+    my_window.after(\cf7 1000\cf2 ,\cf5 display_time)\
+\
+my_window = tk.Tk()\
+my_window.tittle(\cf6 'Digital clock'\cf5 )\
+clock_label=tl.label (my_window\cf2 ,\cf8 font\cf5 =\cf6 'ariel 80'\cf2 ,\cf8 bg\cf5 =\cf6 'black'\cf2 ,\cf8 fg\cf5 =\cf6 'red'\cf5 )\
+clock_label.grid(\cf8 row\cf5 =\cf7 0\cf2 , \cf8 column\cf5 =\cf7 0\cf5 )\
+display_time()\
+\
+\
+\
+\
+Admin GUI login\
+Check results from file.txt}
